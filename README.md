@@ -1,11 +1,17 @@
-# Docker service for Inner-Circle 
+# Inner-Circle-Reverse-Proxy
+Docker service for local development of the Inner-Circle project
 
 # Install
-[Docker](https://www.docker.com/)
+To use this service, you need to install:
+1. [**Docker**](https://www.docker.com/)
+
+# Before you start 
+Make sure the following services are locally deployed on your computer: 
+1. [**Inner-Circle-Auth**](https://github.com/TourmalineCore/Inner-Circle-Auth) 
+2. [**Inner-Circle-Ui**](https://github.com/TourmalineCore/Inner-Circle-UI)
+3. [**Inner-Circle-Account-Management**](https://github.com/TourmalineCore/Inner-Circle-Account-Management)
 
 # Start 
-Make sure you have the localhost with **Inner-Circle-Auth** , **Inner-Circle-Ui** and **Account-Management** up
-
 Run the command 
 ```
 docker compose up -d
