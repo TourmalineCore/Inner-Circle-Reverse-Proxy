@@ -1,5 +1,7 @@
 # Inner-Circle-Reverse-Proxy
-Docker service for local development of the Inner-Circle project
+We develop different parts of the frontend in isolation, but we want to bring all those parts together into one application.
+In order to do that we configured reverse-proxy, the rules of which are described [**here**](https://github.com/TourmalineCore/Inner-Circle-Reverse-Proxy/blob/master/nginx.conf).
+Depending on the route a certain part of the frontend gets rendered. This behavior allows us to handle a set of applications as a single
 
 # Install
 To use this service, you need to install:
