@@ -1,11 +1,19 @@
-# Docker service for Inner-Circle 
+# Inner-Circle-Reverse-Proxy
+We develop different parts of the frontend in isolation, but we want to bring all those parts together into one application.
+In order to do that we configured reverse-proxy, the rules of which are described [**here**](https://github.com/TourmalineCore/Inner-Circle-Reverse-Proxy/blob/master/nginx.conf).
+Depending on the route a certain part of the frontend gets rendered. This behavior allows us to handle a set of applications as a single
 
 # Install
-[Docker](https://www.docker.com/)
+To use this service, you need to install:
+1. [**Docker**](https://www.docker.com/)
+
+# Before you start 
+Make sure the following services are locally deployed on your computer: 
+1. [**Inner-Circle-Auth**](https://github.com/TourmalineCore/Inner-Circle-Auth) 
+2. [**Inner-Circle-Ui**](https://github.com/TourmalineCore/Inner-Circle-UI)
+3. [**Inner-Circle-Account-Management**](https://github.com/TourmalineCore/Inner-Circle-Account-Management)
 
 # Start 
-Make sure you have the localhost with **Inner-Circle-Auth** , **Inner-Circle-Ui** and **Account-Management** up
-
 Run the command 
 ```
 docker compose up -d
